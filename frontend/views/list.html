@@ -1,5 +1,5 @@
-<div ng-if="$ctrl.recipes.length > 0">
-  <input id="search" class="form-control" placeholder="Rechercher..." ng-model="$ctrl.query" />  
+<div ng-if="$ctrl.recipes.length >= 0">
+  <input id="search" class="form-control" placeholder="Rechercher..." ng-model="$ctrl.query" />
   <a class="btn btn-success" ui-sref="create">Ajouter...</a>
   <div class="content">
     <div ng-repeat="recipe in $ctrl.recipes | filter : $ctrl.query" class="item">
